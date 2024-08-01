@@ -19,16 +19,16 @@ export class TableComponent {
    * Atributos alfanumericos (string) se inicializan con comillas simples
    * Atributos numericos (number) se inicializan con cero ('0')
    */
-  
+
   producto= new FormGroup({
-    nombre: new FormControl('',Validators.required)
-    precio: new FormControl(0,Validators.required)
-    descripcion: new FormControl('',Validators.required)
-    categoria: new FormControl('',Validators.required)
-    imagen: new FormControl('',Validators.required)
+    nombre: new FormControl('',Validators.required),
+    precio: new FormControl(0,Validators.required),
+    descripcion: new FormControl('',Validators.required),
+    categoria: new FormControl('',Validators.required),
+    imagen: new FormControl('',Validators.required),
     alt: new FormControl('',Validators.required)
   })
 
-  constructor(public servicioCrud: CrudService);
+  constructor(public servicioCrud: CrudService){};
 
 }
